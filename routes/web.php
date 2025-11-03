@@ -22,3 +22,6 @@ Route::get('/components', function () {
 Route::get('/ads', function () {
     return view('pages.ads');
 })->name('pages.ads');
+Route::get('/blueprint-catalog', function () {
+    return view('pages.blueprint-catalog');
+})->name('pages.blueprint-catalog');

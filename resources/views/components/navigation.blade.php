@@ -6,8 +6,8 @@
         
         <ul class="custom-nav-menu">
             <li>
-                <a href="{{ route('pages.about') }}" 
-                   class="{{ request()->routeIs('pages.about') ? 'active' : '' }}">
+                <a href="{{ route('pages.blueprint-catalog') }}" 
+                   class="{{ request()->routeIs('pages.blueprint-catalog') ? 'active' : '' }}">
                     Vázlatterv katalógus
                 </a>
             </li>
