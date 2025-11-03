@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Ad;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -20,7 +21,8 @@ Route::get('/components', function () {
     return view('pages.components');
 })->name('pages.components');
 Route::get('/ads', function () {
-    return view('pages.ads');
+    $ads=Ad::all();
+    return view('pages.ads', compact('ads'));
 })->name('pages.ads');
 Route::get('/blueprint-catalog', function () {
     return view('pages.blueprint-catalog');
