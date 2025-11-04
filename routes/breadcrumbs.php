@@ -1,0 +1,29 @@
+<?php
+use Diglactic\Breadcrumbs\Breadcrumbs;
+use Diglactic\Breadcrumbs\Generator as Trail;
+
+
+Breadcrumbs::for('pages.welcome', fn (Trail $trail) =>
+    $trail->push('Főoldal', route('pages.welcome'))
+);
+
+Breadcrumbs::for('pages.contact', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Kapcsolat', route('pages.contact'))
+);
+
+Breadcrumbs::for('pages.about', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Ismerd meg', route('pages.about'))
+);
+
+Breadcrumbs::for('pages.genesis-houses', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Genesis Házak', route('pages.genesis-houses'))
+);
+Breadcrumbs::for('pages.components', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Előre gyártott elemek', route('pages.components'))
+);
+Breadcrumbs::for('pages.ads', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Hirdetések', route('pages.ads'))
+);
+Breadcrumbs::for('pages.blueprint-catalog', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Vázlatterv katalógus', route('pages.blueprint-catalog'))
+);

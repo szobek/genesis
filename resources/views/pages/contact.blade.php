@@ -1,11 +1,14 @@
 <x-main-layout>
     <x-slot name="header">
         <x-header />
+        
+
     </x-slot>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
+                
                 <h1>Kapcsolat</h1>
                 <div id="map"></div>
                 @vite(['resources/js/map.js'])
