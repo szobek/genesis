@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Ad;
+use App\Models\Msg;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -17,5 +18,8 @@ class DatabaseSeeder extends Seeder
     {
         Ad::truncate();
         Ad::factory(4)->create();
+
+        Msg::truncate();
+        Msg::factory(10)->create();
     }
 }

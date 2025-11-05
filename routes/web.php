@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Ad;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,6 +9,7 @@ Route::get('/', function () {
 })->name('pages.welcome');
 
 Route::get('/contact', function () {
+    Mail::to("kunszt.norbert@gmail.com")->send(new \App\Mail\Contact());
     return view('pages.contact');
 })->name('pages.contact');
 
