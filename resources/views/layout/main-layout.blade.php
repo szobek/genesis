@@ -12,7 +12,7 @@
         
     </head>
     <body>
-        <div>
+        <div class="content">
             @include('components.navigation')
 
             <!-- Page Heading -->
@@ -30,6 +30,9 @@
             </main>
 
         </div>
+        <footer>
+            @include('components.footer')
+        </footer>
     </body>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </html>
