@@ -4,7 +4,19 @@
 @use 'contact';
 @use 'pdf-viewer';
 @use 'footer';
+@use 'welcome';
+@use 'carousel';
 
-header{
-    margin-top: 5rem;
+$main-slot-bg: #fff;
+
+header {
+    margin: 5rem;
+}
+
+.main-slot {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: $main-slot-bg;
+overflow: hidden;
+    
 }

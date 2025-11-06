@@ -26,7 +26,19 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 main-slot p-0">
+                                        {{ $slot }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
 
         </div>

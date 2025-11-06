@@ -5,7 +5,10 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('pages/welcome');
+    $ads=Ad::all()->toArray();
+$components=[['image'=>asset('storage/images/components/ablak-247x278.jpg')],['image'=>asset('storage/images/components/Kep28-247x296.png')]];
+
+    return view('pages/welcome',['ads'=>$ads,'components'=>$components ]);
 })->name('pages.welcome');
 
 Route::get('/contact', function () {

@@ -1,7 +1,50 @@
 <x-main-layout>
-    <x-slot name="header">
-        Címsor
-    </x-slot>
+    <div class="hero mt-5">
+        <img src="{{ asset('storage/images/hero.jpg') }}" alt="">
+        <p>készre gyártott panelek</p>
+        <h2>Az építkezés egyszerűbb, mint valaha</h2>
+    </div>
+    <div class="about-genesis m-5">
+        <div class="row">
+            <div class="col-md-6">
+                <x-carousel :slides="[['image' => asset('storage/images/slides/home-first/slide1.png'),], ['image' => asset('storage/images/slides/home-first/slide2.png'),], ['image' => asset('storage/images/slides/home-first/slide3.png')], ['image' => asset('storage/images/slides/home-first/slide4.png'),], ['image' => asset('storage/images/slides/home-first/slide5.png')]]" />
+            </div>
+            <div class="col-md-6">
+                <h2>Miért pont a Genesis Házak?</h2>
+                <p>Az építkezés minden problémás lépését kiküszöböljük azzal, hogy a paneleket már a telephelyen készre
+                    gyártjuk.</p>
+                <p>Sem speciális eszközökre, sem állványzatra, sem plusz munkaerőre nincs szükség, így elkerülhetőek a
+                    magas járulékos költségek.</p>
+                <button type="button" class="btn btn-light">Ismerd meg!</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="ads-by-genesis">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Most futó hirdetéseink</h2>
+            </div>
+            <div class="col-12">
+                <x-carousel :slides="$ads" autoplayInterval="2000" />
+            </div>
+        </div>
+    </div>
     
-    Tartalom
+    <div class="components mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Rendelhető előre gyártott elemek
+                </h2>
+            </div>
+            <div class="col-12">
+                <x-carousel :slides="$components" autoplayInterval="2000" backgroundSize="contain" />
+            </div>
+            <div class="col-12 mt-5 text-center mb-4">
+                <a href="" class="btn btn-primary">
+                    Tovább az összes rendelhető elemhez
+                </a>
+            </div>
+        </div>
+    </div>
 </x-main-layout>
