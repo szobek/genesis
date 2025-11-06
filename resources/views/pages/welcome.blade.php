@@ -47,4 +47,24 @@
             </div>
         </div>
     </div>
+
+    <div class="about-tender mb-3 p-5">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h2 class="text-center">
+                    Nálunk az ajánlatkérés mindig ingyenes!
+                </h2>
+                <p>
+                    Most van itt az idő! Kérj ingyenes ajánlatot, és mi segítünk felépíteni azt az otthont vagy nyaralót, amire mindig is vágytál.
+                </p>
+                <p>
+                    Olyan ajánlatot állítunk össze neked, ami pontosan a Te igényeidhez és elképzeléseidhez igazodik.
+                </p>
+                <a href="" class="btn btn-primary">Ajánlatot kérek</a>
+            </div>
+            <div class="col-md-6 ">
+                <img src="{{ asset('storage/images/haz1.png') }}" alt="" style="width: 100%">
+            </div>
+        </div>
+    </div>
 </x-main-layout>
