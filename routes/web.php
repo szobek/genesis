@@ -4,6 +4,8 @@ use App\Models\Ad;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
+require __DIR__ . '/blog.php';
+
 Route::get('/', function () {
     $ads=Ad::all()->toArray();
 $components=[['image'=>asset('storage/images/components/ablak-247x278.jpg')],['image'=>asset('storage/images/components/Kep28-247x296.png')]];

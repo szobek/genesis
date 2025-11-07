@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
         Ad::truncate();
         Ad::factory(4)->create();
 
-        Msg::truncate();
-        Msg::factory(10)->create();
+        $this->call([
+            AdsTableSeeder::class,
+        ]);
     }
 }
