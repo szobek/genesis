@@ -31,3 +31,7 @@ Breadcrumbs::for('pages.blueprint-catalog', fn (Trail $trail) =>
 Breadcrumbs::for('pages.simple-ad', fn (Trail $trail) =>
     $trail->parent('pages.ads')->push('Hirdetés', route('pages.blueprint-catalog'))
 );
+
+Breadcrumbs::for('pages.tender', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Árajánlat', route('pages.tender'))
+);
