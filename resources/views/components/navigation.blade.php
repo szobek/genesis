@@ -1,7 +1,7 @@
 <nav class="custom-main-nav">
     <div class="custom-nav-container">
         <a href="/" class="custom-logo">
-        <img src="{{ asset('storage/images/genesis-w-970x1024.png') }}" alt="">
+        <img src="{{ asset('assets/images/genesis-w-970x1024.png') }}" alt="">
         </a>
         
         <ul class="custom-nav-menu">

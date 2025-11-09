@@ -12,13 +12,12 @@ Route::get('/', function () {
     foreach ($ads as $ad) {
         $adsarray[$index++] = ["description" => strip_tags($ad)];
     }
-    $components = [['image' => asset('storage/images/components/ablak-247x278.jpg')], ['image' => asset('storage/images/components/Kep28-247x296.png')]];
+    $components = [['image' => asset('assets/images/components/ablak-247x278.jpg')], ['image' => asset('assets/images/components/Kep28-247x296.png')]];
 
     return view('pages/welcome', ['ads' => $adsarray, 'components' => $components]);
 })->name('pages.welcome');
 
 Route::get('/contact', function () {
-    Mail::to("kunszt.norbert@gmail.com")->send(new \App\Mail\Contact());
     return view('pages.contact');
 })->name('pages.contact');
 

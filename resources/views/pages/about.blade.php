@@ -9,9 +9,9 @@
                     Az építkezés még soha nem volt ilyen egyszerű!
                 </h2>
                 <div class="images">
-                    <img src="{{ asset('storage/images/haz1.png') }} " alt="">
-                    <img src="{{ asset('storage/images/haz2.png') }} " alt="">
-                    <img src="{{ asset('storage/images/haz3.png') }} " alt="">
+                    <img src="{{ asset('assets/images/haz1.png') }} " alt="">
+                    <img src="{{ asset('assets/images/haz2.png') }} " alt="">
+                    <img src="{{ asset('assets/images/haz3.png') }} " alt="">
                 </div>
                 <h2>
                     Az építkezés új szintje: gyorsabb, könnyebb, egyszerűbb!

@@ -13,11 +13,11 @@
 
             <div class="images">
                 <figure>
-                    <img src="{{ asset('storage/images/components/ablak-247x278.jpg') }} " alt="">
+                    <img src="{{ asset('assets/images/components/ablak-247x278.jpg') }} " alt="">
                     <figcaption>Beépített ablakos falszerkezet</figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ asset('storage/images/components/Kep28-247x296.png') }} " alt="">
+                    <img src="{{ asset('assets/images/components/Kep28-247x296.png') }} " alt="">
                     <figcaption>Beépített ajtós falszerkezet</figcaption>
                 </figure>
             </div>

@@ -1,13 +1,13 @@
 <x-main-layout>
     <div class="hero mt-5">
-        <img src="{{ asset('storage/images/hero.jpg') }}" alt="">
+        <img src="{{ asset('assets/images/hero.jpg') }}" alt="">
         <p>készre gyártott panelek</p>
         <h2>Az építkezés egyszerűbb, mint valaha</h2>
     </div>
     <div class="about-genesis m-5">
         <div class="row">
             <div class="col-md-6">
-                <x-carousel :slides="[['image' => asset('storage/images/slides/home-first/slide1.png'),], ['image' => asset('storage/images/slides/home-first/slide2.png'),], ['image' => asset('storage/images/slides/home-first/slide3.png')], ['image' => asset('storage/images/slides/home-first/slide4.png'),], ['image' => asset('storage/images/slides/home-first/slide5.png')]]" />
+                <x-carousel :slides="[['image' => asset('assets/images/slides/home-first/slide1.png'),], ['image' => asset('assets/images/slides/home-first/slide2.png'),], ['image' => asset('assets/images/slides/home-first/slide3.png')], ['image' => asset('assets/images/slides/home-first/slide4.png'),], ['image' => asset('assets/images/slides/home-first/slide5.png')]]" />
             </div>
             <div class="col-md-6">
                 <h2>Miért pont a Genesis Házak?</h2>
@@ -63,7 +63,7 @@
                 <a href="" class="btn btn-primary">Ajánlatot kérek</a>
             </div>
             <div class="col-md-6 ">
-                <img src="{{ asset('storage/images/haz1.png') }}" alt="" style="width: 100%">
+                <img src="{{ asset('assets/images/haz1.png') }}" alt="" style="width: 100%">
             </div>
         </div>
     </div>

@@ -11,9 +11,9 @@
                     készült vázlatterveket.
                 </h2>
 
-                <x-pdf-viewer pdfUrl="{{ asset('storage/documents/vazlatterv-katalogus.pdf') }}" :title="'Vázlatterv katalógus'" />
+                <x-pdf-viewer pdfUrl="{{ asset('assets/documents/vazlatterv-katalogus.pdf') }}" :title="'Vázlatterv katalógus'" />
                 <p>
-                    <a href="{{ asset('storage/documents/vazlatterv-katalogus.pdf') }}" class="btn btn-primary" target="_blank">Letötés</a>
+                    <a href="{{ asset('assets/documents/vazlatterv-katalogus.pdf') }}" class="btn btn-primary" target="_blank">Letötés</a>
                 </p>
             </div>
         </div>

@@ -8,7 +8,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-3 col-sm-2">
-                                <img src="{{ asset('storage/images/footer/ajanlat-100x100.png') }}" alt="">
+                                <img src="{{ asset('assets/images/footer/ajanlat-100x100.png') }}" alt="">
                             </div>
                             <div class="col-md-9 col-sm-10">
                                 <h6>Kérd ingyenes ajánlatunkat még ma!</h6>
@@ -21,7 +21,7 @@
                         <div class="row">
                             
                             <div class="col-md-3 col-sm-2">
-                                <img src="{{ asset('storage/images/footer/map-100x100.png') }}" alt="">
+                                <img src="{{ asset('assets/images/footer/map-100x100.png') }}" alt="">
                             </div>
                             <div class="col-md-9 col-sm-10">
                                 <h6>Látogass el hozzánk személyesen!</h6>
@@ -53,12 +53,12 @@
                         <ul class="social-icon-list">
                             <li>
                                 <a href="">
-                                    <img src="{{ asset('storage/images/icons/fb_icon.png') }}" alt="">
+                                    <img src="{{ asset('assets/images/icons/fb_icon.png') }}" alt="">
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="{{ asset('storage/images/icons/insta_icon.png') }}" alt="">
+                                    <img src="{{ asset('assets/images/icons/insta_icon.png') }}" alt="">
                                 </a>
                             </li>
                         </ul>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 footer-logo-container">
-                        <img src="{{ asset('storage/images/genesis-w-970x1024.png') }}" alt="">
+                        <img src="{{ asset('assets/images/genesis-w-970x1024.png') }}" alt="">
                     </div>
                 </div>
             </div>

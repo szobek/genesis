@@ -28,9 +28,9 @@
                     összeszerelés egyszerű: a panelek csavarokkal illeszkednek, és mindössze egy csavarbehajtóra van
                     szükség.
                 </p>
-                <x-pdf-viewer pdfUrl="{{ asset('storage/documents/TERMEKISMERTETO-1.pdf') }}" :title="'Genesis házak'" />
+                <x-pdf-viewer pdfUrl="{{ asset('assets/documents/TERMEKISMERTETO-1.pdf') }}" :title="'Genesis házak'" />
                 <p>
-                    <a href="{{ asset('storage/documents/TERMEKISMERTETO-1.pdf') }}" class="btn btn-primary" target="_blank">Letötés</a>
+                    <a href="{{ asset('assets/documents/TERMEKISMERTETO-1.pdf') }}" class="btn btn-primary" target="_blank">Letötés</a>
                 </p>
             </div>
         </div>
