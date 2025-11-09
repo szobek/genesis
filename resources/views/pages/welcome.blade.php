@@ -1,5 +1,5 @@
 <x-main-layout>
-    <div class="hero mt-5">
+    <div class="hero mt-5 p-0">
         <img src="{{ asset('assets/images/hero.jpg') }}" alt="">
         <p>készre gyártott panelek</p>
         <h2>Az építkezés egyszerűbb, mint valaha</h2>

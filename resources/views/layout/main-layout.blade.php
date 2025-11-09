@@ -31,7 +31,7 @@
                         <div class="col-12">
                             <div class="container mb-5">
                                 <div class="row">
-                                    <div {{ $attributes->merge(['class' => 'col-12 main-slot p-3']) }}>
+                                    <div {{ $attributes->merge(['class' => 'col-12 main-slot p-0']) }}>
                                         {{ $slot }}
                                     </div>
                                 </div>
