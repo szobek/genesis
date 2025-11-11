@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TenderController;
 use App\Models\Ad;
 use Illuminate\Support\Facades\Mail;
@@ -18,9 +19,8 @@ Route::get('/', function () {
     return view('pages/welcome', ['ads' => $adsarray, 'components' => $components]);
 })->name('pages.welcome');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('pages.contact');
+Route::get('/contact', [ContactController::class,'contact_view'])->name('pages.contact');
+Route::post('/contact', [ContactController::class,'read_dat_and_send_email'])->name('create.contact');
 
 Route::get('/about', function () {
     return view('pages.about');

@@ -10,7 +10,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class Contact extends Mailable
+class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -42,8 +42,10 @@ class Contact extends Mailable
             view: 'mail.contact',
             with:[
                 "msg" => $msg->msg ?? "",
-                "sender" => $msg->sender ?? "",
-                "email" => $msg->email ?? ""
+                "name" => $msg->name ?? "",
+                "email" => $msg->email ?? "",
+                "phone" => $msg->phone ?? "",
+
             ]
         );
     }

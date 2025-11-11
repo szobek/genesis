@@ -161,14 +161,14 @@
                 <div class="d-flex flex-column text-center tender-contact">
                     <div>
                         <img src="{{ asset('assets/images/contact/phone_icon.png') }}" alt="">
-                        <p class="title">Telefonszám</p>
+                        <p class="subtitle">Telefonszám</p>
                         <p>+36 20 461 6813</p>
                     </div>
                     <div>
                         
                     </div>
                     <img src="{{ asset('assets/images/contact/email_icon.png') }}" alt="">
-                    <p class="title">E-mail cím</p>
+                    <p class="subtitle">E-mail cím</p>
                     <p>genesishaz1@gmail.com</p>
                 </div>
             </div>

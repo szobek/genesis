@@ -46,7 +46,9 @@
                                 </tr>
                                 <tr>
                                     <td style="font-size: 16px; line-height: 1.8; color: #555555; padding-bottom: 20px;">
-                                        Név: {{ $sender ?? "Név..." }} | e-mail: {{ $email ?? "email cím..."}}
+                                        Név: {{ $name  }} <br>
+                                        e-mail: {{ $email }} <br>
+                                        telefonszám: {{ $phone }}
                                     </td>
                                 </tr>
                                 <tr>
