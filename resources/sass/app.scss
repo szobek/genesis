@@ -6,6 +6,7 @@
 @use 'footer';
 @use 'welcome';
 @use 'carousel';
+@use 'tender';
 
 $main-slot-bg: #fff;
 
@@ -17,6 +18,11 @@ header {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: $main-slot-bg;
-overflow: hidden;
-    
+    overflow: hidden;
+}
+
+.title{
+    color: #3e5bae;
+    font-size: 20px;
+    font-weight: 600;
 }
