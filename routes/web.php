@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TenderController;
 use App\Models\Ad;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
@@ -46,3 +47,5 @@ Route::get('/blueprint-catalog', function () {
 Route::get('/arajanlat', function () {
     return view('pages.tender');
 })->name('pages.tender');
+
+Route::post('arajanlat',[TenderController::class, 'create_tender'])->name('tender.create');

@@ -13,7 +13,7 @@
                             <div class="col-md-9 col-sm-10">
                                 <h6>Kérd ingyenes ajánlatunkat még ma!</h6>
                                 <p>Ne várj tovább, vedd fel velünk a kapcsolatot most, és kérd ingyenes ajánlatunkat!</p>
-                                <a href="" class="btn btn-sm btn-light">Árajánlat kérés</a>
+                                <a href="{{ route('pages.tender') }}" class="btn btn-sm btn-light">Árajánlat kérés</a>
                             </div>
                         </div>
                     </div>
