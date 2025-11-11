@@ -2,22 +2,14 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TenderController;
+use App\Http\Controllers\WelcomeController;
 use App\Models\Ad;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/blog.php';
 
-Route::get('/', function () {
-    $ads = Ad::select('short')->get()->pluck("short")->toArray();
-    $index = 0;
-    foreach ($ads as $ad) {
-        $adsarray[$index++] = ["description" => strip_tags($ad)];
-    }
-    $components = [['image' => asset('assets/images/components/ablak-247x278.jpg')], ['image' => asset('assets/images/components/Kep28-247x296.png')]];
-
-    return view('pages/welcome', ['ads' => $adsarray, 'components' => $components]);
-})->name('pages.welcome');
+Route::get('/', [WelcomeController::class,'home_view'])->name('pages.welcome');
 
 Route::get('/contact', [ContactController::class,'contact_view'])->name('pages.contact');
 Route::post('/contact', [ContactController::class,'read_dat_and_send_email'])->name('create.contact');

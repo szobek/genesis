@@ -7,7 +7,7 @@
     <div class="about-genesis m-5">
         <div class="row">
             <div class="col-md-6">
-                <x-carousel :slides="[['image' => asset('assets/images/slides/home-first/slide1.png'),], ['image' => asset('assets/images/slides/home-first/slide2.png'),], ['image' => asset('assets/images/slides/home-first/slide3.png')], ['image' => asset('assets/images/slides/home-first/slide4.png'),], ['image' => asset('assets/images/slides/home-first/slide5.png')]]" />
+                <x-carousel :slides="$why_genesis" />
             </div>
             <div class="col-md-6">
                 <h2>Miért pont a Genesis Házak?</h2>
@@ -15,7 +15,7 @@
                     gyártjuk.</p>
                 <p>Sem speciális eszközökre, sem állványzatra, sem plusz munkaerőre nincs szükség, így elkerülhetőek a
                     magas járulékos költségek.</p>
-                <button type="button" class="btn btn-light">Ismerd meg!</button>
+                <a href="{{ route('pages.genesis-houses') }}"  class="btn btn-light">Ismerd meg!</a>
             </div>
         </div>
 
@@ -26,7 +26,7 @@
                 <h2 class="text-center">Most futó hirdetéseink</h2>
             </div>
             <div class="col-12">
-                <x-carousel :slides="$ads" autoplayInterval="2000" />
+                <x-carousel :slides="$adsarray" autoplayInterval="2000" />
             </div>
         </div>
     </div>
