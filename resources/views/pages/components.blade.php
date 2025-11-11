@@ -10,16 +10,18 @@
                 <h5>Előre gyártott elemeink teljes körű építési megoldást jelenthetnek,
                     akár egy családi ház építéséhez is.</h5>
             </div>
-
-            <div class="images">
-                <figure>
-                    <img src="{{ asset('assets/images/components/ablak-247x278.jpg') }} " alt="">
-                    <figcaption>Beépített ablakos falszerkezet</figcaption>
-                </figure>
-                <figure>
-                    <img src="{{ asset('assets/images/components/Kep28-247x296.png') }} " alt="">
-                    <figcaption>Beépített ajtós falszerkezet</figcaption>
-                </figure>
+            <div class="col-md-12">
+                <x-pdf-viewer pdfUrl="{{ asset('assets/documents/arlistas-termekismerteto.pdf') }}" />
             </div>
+
+            <div class="col-md-12">
+                <p>
+                    <a href="{{ asset('assets/documents/arlistas-termekismerteto.pdf') }}" class="btn btn-primary"
+                        target="_blank">Letöltés</a>
+                </p>
+            </div>
+
+
+
         </div>
 </x-main-layout>
