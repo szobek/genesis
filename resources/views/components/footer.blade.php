@@ -40,12 +40,12 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="">Kezdőlap</a>
+                                    <a href="{{ route('pages.welcome') }}">Kezdőlap</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('pages.adatvedelem') }}">Adatvédelmi irányelvek</a>
                                 </li>
-                                <li><a href="">Kapcsolat</a></li>
+                                <li><a href="{{ route('pages.contact') }}">Kapcsolat</a></li>
                             </ul>
                         </nav>
                     </div>
