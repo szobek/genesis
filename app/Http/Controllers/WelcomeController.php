@@ -9,14 +9,27 @@ class WelcomeController extends Controller
 {
     public function home_view()
     {
-        $ads = Ad::select("title","short")->get()->toArray();
-        foreach ($ads as $index=> $ad) {
-            $adsarray[$index] = ["title"=>$ad["title"],"description" => strip_tags($ad["short"])];
+        $ads = Ad::select("title", "short")->get()->toArray();
+        foreach ($ads as $index => $ad) {
+            $adsarray[$index] = ["title" => $ad["title"], "description" => strip_tags($ad["short"])];
         }
-        $components = [
-            ['image' => asset('assets/images/components/ablak-247x278.jpg')],
-            ['image' => asset('assets/images/components/Kep28-247x296.png')]
+
+        $component_images = [
+            ["path"=>asset('assets/images/components/ablak-247x278.jpg'), "title"=>"Beépített ablakos falszerkezet"],
+            ["path"=>asset('assets/images/components/Kep28-247x296.png'), "title"=>"Beépített ajtós falszerkezet"],
+            ["path"=>asset('assets/images/components/sarok2-1-247x296.png'), "title"=>"Sarokszerkezet + kiegészítő hőszigetelés"],
+            ["path"=>asset('assets/images/components/ft2-247x296.png'), "title"=>"Nem beépített ferdetető szerkezet"],
+            ["path"=>asset('assets/images/components/nbf2-247x296.png'), "title"=>"Nem beépített ferdetető szerkezet + kiegészítő hőszigetelés"],
+            ["path"=>asset('assets/images/components/fp1-247x296.png'), "title"=>"Földszinti padlószerkezet"],
+            ["path"=>asset('assets/images/components/nbt2-247x296.png'), "title"=>"Nem beépített tetőtér alatti zárófödém szerkezet"],
+            ["path"=>asset('assets/images/components/bnt1-247x296.png'), "title"=>"Belső nem teherhordó válaszfal"],
         ];
+
+
+        $components = [];
+        foreach ($component_images as $index => $image) {
+            $components[$index] = ["image" => $image['path'],"title"=>$image['title']];
+        }
 
         $why_genesis = [];
         $images_for_why = [
@@ -58,6 +71,6 @@ class WelcomeController extends Controller
             $why_genesis[$index] = ["image" => $val];
         }
 
-        return view('pages/welcome', compact('adsarray','components','why_genesis'));
+        return view('pages/welcome', compact('adsarray', 'components', 'why_genesis'));
     }
 }

@@ -41,7 +41,7 @@
                 <x-carousel :slides="$components" autoplayInterval="2000" backgroundSize="contain" />
             </div>
             <div class="col-12 mt-5 text-center mb-4">
-                <a href="" class="btn btn-primary">
+                <a href="{{ route('pages.components') }}" class="btn btn-primary">
                     Tovább az összes rendelhető elemhez
                 </a>
             </div>
