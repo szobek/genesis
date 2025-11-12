@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="Vázlatterv katalógus">
     <x-slot name="header">
         <x-header />
     </x-slot>

@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="Kapcsolat">
     <x-slot name="header">
         <x-header />
 

@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="Ismerd meg!">
     <x-slot name="header">
         <x-header />
     </x-slot>

@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="Kezdőlap">
     <div class="hero mt-5 p-0">
         <img src="{{ asset('assets/images/hero.jpg') }}" alt="">
         <p>készre gyártott panelek</p>

@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="{{ strip_tags($ad->title) }}">
     <x-slot name="header">
         <x-header />
     </x-slot>
