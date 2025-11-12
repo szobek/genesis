@@ -10,9 +10,8 @@ class WelcomeController extends Controller
     public function home_view()
     {
         $ads = Ad::select("title","short")->get()->toArray();
-        $index = 0;
-        foreach ($ads as $ad) {
-            $adsarray[$index++] = ["title"=>$ad["title"],"description" => strip_tags($ad["short"])];
+        foreach ($ads as $index=> $ad) {
+            $adsarray[$index] = ["title"=>$ad["title"],"description" => strip_tags($ad["short"])];
         }
         $components = [
             ['image' => asset('assets/images/components/ablak-247x278.jpg')],
