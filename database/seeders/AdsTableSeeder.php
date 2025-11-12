@@ -18,7 +18,7 @@ class AdsTableSeeder extends Seeder
         DB::table('ads')->insert([
             [
                 'title' => 'Viszonteladókat keresünk!',
-                'description' => '<strong>Legyen Ön is részese a jövő építkezéseinek!</strong><p>    A Genesis Házak Kft. új viszonteladó partnereket keres, akik részt vennének innovatív megoldásaink forgalmazásában,    valamint kivitelezőket az építőelemek összeszerelésére és a szakági munkák elvégzésére. Fedezze fel az    együttműködésben rejlő lehetőségeket az alábbi tájékoztatóból, amelyet viszonteladóink számára állítottunk össze.</p><p>    Termékcsalád révén a Tetris típusú építési készlet alkalmas számos épület és építmény létesítéséhez, ami lehetővé    teszi a különböző piaci igények kiszolgálását. Törekszünk a színvonal folyamatos növelésére így a termékein    eladhatósága is fejlődik. Nyitottak vagyunk különböző kölcsönösen hasznos ötletek és innovációk kiterjesztésére a    termékcsaládra. Biztosítunk megfelelő minőségű és mennyiségű reklámanyagot. Az érdeklődés fokozása érdekében szükség    esetén díjmentesen biztosítunk kiállítási darabokat.</p><x-pdf-viewer pdfUrl="http://localhost:8000/storage/sample.pdf" />',
+                'description' => '<strong>Legyen Ön is részese a jövő építkezéseinek!</strong><p>    A Genesis Házak Kft. új viszonteladó partnereket keres, akik részt vennének innovatív megoldásaink forgalmazásában,    valamint kivitelezőket az építőelemek összeszerelésére és a szakági munkák elvégzésére. Fedezze fel az    együttműködésben rejlő lehetőségeket az alábbi tájékoztatóból, amelyet viszonteladóink számára állítottunk össze.</p><p>    Termékcsalád révén a Tetris típusú építési készlet alkalmas számos épület és építmény létesítéséhez, ami lehetővé    teszi a különböző piaci igények kiszolgálását. Törekszünk a színvonal folyamatos növelésére így a termékein    eladhatósága is fejlődik. Nyitottak vagyunk különböző kölcsönösen hasznos ötletek és innovációk kiterjesztésére a    termékcsaládra. Biztosítunk megfelelő minőségű és mennyiségű reklámanyagot. Az érdeklődés fokozása érdekében szükség    esetén díjmentesen biztosítunk kiállítási darabokat.</p><x-pdf-viewer pdfUrl="/assets/documents/arlistas_termekismerteto_14.pdf" /><x-download-pdf-button url="/assets/documents/arlistas_termekismerteto_14.pdf" />',
                 'short' => '<p>    A Genesis Házak Kft. új viszonteladó partnereket keres, akik részt vennének innovatív megoldásaink forgalmazásában,    valamint kivitelezőket az építőelemek összeszerelésére és a szakági munkák elvégzésére. Fedezze fel az    együttműködésben rejlő lehetőségeket az alábbi tájékoztatóból, amelyet viszonteladóink számára állítottunk össze.</p>',                
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -41,7 +41,8 @@ class AdsTableSeeder extends Seeder
     Alkalmazástechnikában. További hasznos információkért állunk rendelkezésükre az alábbi elérhetőségeken.
 </p>
 
-<x-pdf-viewer pdfUrl="http://localhost:8000/storage/sample.pdf" />',
+<x-pdf-viewer pdfUrl="/assets/documents/tervezoi-alkalmazastechnika.pdf" />
+<x-download-pdf-button url="/assets/documents/tervezoi-alkalmazastechnika.pdf" />',
                 'short' => '<p>
     A Genesis Házak Kft. megbízható kivitelező partnereket keres az elemek összeszerelésére, a szakági munkák
     elvégzésére, valamint együttműködő partnereket forgalmazásra. Tekintse meg rövid tájékoztatónkat, amelyet
@@ -66,8 +67,10 @@ class AdsTableSeeder extends Seeder
     megtalálhatóak a Gyártói Alkalmazástechnikában.
 </p>
 
-<x-pdf-viewer pdfUrl="http://localhost:8000/storage/sample.pdf" />
-<x-pdf-viewer pdfUrl="http://localhost:8000/storage/sample.pdf" />',
+<x-pdf-viewer pdfUrl="/assets/documents/tervezoi-alkalmazastechnika.pdf" />
+<x-download-pdf-button url="/assets/documents/tervezoi-alkalmazastechnika.pdf" />
+<x-pdf-viewer pdfUrl="/assets/documents/teljesitmenynyilatkozat.pdf" />
+<x-download-pdf-button url="/assets/documents/teljesitmenynyilatkozat.pdf" />',
                 'short' => '<p>
     Legyen részese a jövő építésének!
     A Genesis Házak Kft. olyan vállalkozókat keres, akik szeretnének csatlakozni hozzánk innovatív házaink
@@ -98,7 +101,8 @@ class AdsTableSeeder extends Seeder
     tisztán tartva a építési helyszínt.
 </p>
 
-<x-pdf-viewer pdfUrl="http://localhost:8000/storage/sample.pdf" />',
+<x-pdf-viewer pdfUrl="/assets/documents/arlistas_termekismerteto_14.pdf" />
+<x-download-pdf-button url="/assets/documents/arlistas_termekismerteto_14.pdf" />',
                 'short' => '<p>
     A Genesis Házak Kft. azon dolgozik, hogy az építkezők számára elérhetővé tegye a modern, gyorsan kivitelezhető és
     megbízható megoldásokat. Partnereket keresünk a forgalmazáshoz, valamint kivitelezőket az elemek összeszereléséhez
