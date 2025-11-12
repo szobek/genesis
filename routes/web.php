@@ -41,3 +41,7 @@ Route::get('/arajanlat', function () {
 })->name('pages.tender');
 
 Route::post('arajanlat',[TenderController::class, 'create_tender'])->name('tender.create');
+
+Route::get('/adatkezelesi-tajekoztato', function(){
+    return view('pages.adatvedelmi-iranyelvek');
+})->name('pages.adatvedelem');

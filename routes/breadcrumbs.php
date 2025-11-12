@@ -35,3 +35,6 @@ Breadcrumbs::for('pages.simple-ad', fn (Trail $trail) =>
 Breadcrumbs::for('pages.tender', fn (Trail $trail) =>
     $trail->parent('pages.welcome')->push('Árajánlat', route('pages.tender'))
 );
+Breadcrumbs::for('pages.adatvedelem', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Adatkezelés', route('pages.tender'))
+);

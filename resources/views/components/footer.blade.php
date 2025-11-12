@@ -43,7 +43,7 @@
                                     <a href="">Kezdőlap</a>
                                 </li>
                                 <li>
-                                    <a href="">Adatvédelmi irányelvek</a>
+                                    <a href="{{ route('pages.adatvedelem') }}">Adatvédelmi irányelvek</a>
                                 </li>
                                 <li><a href="">Kapcsolat</a></li>
                             </ul>
