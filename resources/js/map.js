@@ -1,15 +1,26 @@
 const mapData = {
-    center: { lat: 47.497913, lng: 19.040236 },
+    center: { lat: 46.858109051904144, lng: 20.55937215797379 },
     zoom: 12,
+    markerCoordinates: { lat: 46.858109051904144, lng: 20.55937215797379 },
+    mapId:'eb222c4c609ebf0067904bd8'
 };
 
-const init = () => {
-    const map = new google.maps.Map(document.getElementById("map"), {
+const init = async () => {
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+    const map = new Map(document.getElementById("map"), {
         zoom: mapData.zoom,
         center: mapData.center,
-        gestureHandling: 'cooperative'
+        gestureHandling: 'cooperative',
+        mapId:mapData.mapId
     });
 
+    const marker = new AdvancedMarkerElement({
+        map: map,
+        position: mapData.markerCoordinates,
+        title: "Genesis"
+    });
 };
 
 window.initMap = init;
