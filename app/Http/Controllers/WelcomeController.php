@@ -9,10 +9,10 @@ class WelcomeController extends Controller
 {
     public function home_view()
     {
-        $ads = Ad::select('short')->get()->pluck("short")->toArray();
+        $ads = Ad::select("title","short")->get()->toArray();
         $index = 0;
         foreach ($ads as $ad) {
-            $adsarray[$index++] = ["description" => strip_tags($ad)];
+            $adsarray[$index++] = ["title"=>$ad["title"],"description" => strip_tags($ad["short"])];
         }
         $components = [
             ['image' => asset('assets/images/components/ablak-247x278.jpg')],
@@ -59,9 +59,6 @@ class WelcomeController extends Controller
             $why_genesis[$index] = ["image" => $val];
         }
 
-        // dd($why_genesis);
-
-        // return view('pages/welcome', ['ads' => $adsarray, 'components' => $components, 'immages_for_why' => $why_genesis]);
         return view('pages/welcome', compact('adsarray','components','why_genesis'));
     }
 }
