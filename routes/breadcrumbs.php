@@ -38,3 +38,12 @@ Breadcrumbs::for('pages.tender', fn (Trail $trail) =>
 Breadcrumbs::for('pages.adatvedelem', fn (Trail $trail) =>
     $trail->parent('pages.welcome')->push('Adatkezelés', route('pages.tender'))
 );
+
+Breadcrumbs::for('pages.alkalmazastechnika', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Alkalmazástechnika', route('pages.alkalmazastechnika'))
+);
+
+Breadcrumbs::for('pages.teljesitmennyilatkozat', fn (Trail $trail) =>
+    $trail->parent('pages.welcome')->push('Teljesítménnyilatkozat', route('pages.teljesitmennyilatkozat'))
+);
+

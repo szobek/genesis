@@ -45,3 +45,11 @@ Route::post('arajanlat',[TenderController::class, 'create_tender'])->name('tende
 Route::get('/adatkezelesi-tajekoztato', function(){
     return view('pages.adatvedelmi-iranyelvek');
 })->name('pages.adatvedelem');
+
+Route::get('/teljesitmennyilatkozat', function(){
+    return view('pages.teljesitmennyilatkozat');
+})->name('pages.teljesitmennyilatkozat');
+
+Route::get('/alkalmazastechnika', function(){
+    return view('pages.alkalmazastechnika');
+})->name('pages.alkalmazastechnika');
