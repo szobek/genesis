@@ -60,7 +60,7 @@
                 <p>
                     Olyan ajánlatot állítunk össze neked, ami pontosan a Te igényeidhez és elképzeléseidhez igazodik.
                 </p>
-                <a href="" class="btn btn-primary">Ajánlatot kérek</a>
+                <a href="{{ route('pages.tender') }}" class="btn btn-primary">Ajánlatot kérek</a>
             </div>
             <div class="col-md-6 ">
                 <img src="{{ asset('assets/images/haz1.png') }}" alt="" style="width: 100%">
